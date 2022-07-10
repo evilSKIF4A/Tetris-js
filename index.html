@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" href="favicon.ico" />
+    <link rel="stylesheet" href="style.css" />
+    <title>TETRIS</title>
+  </head>
+  <body>
+    <table>
+      <tbody>
+        <tr>
+          <td>
+            <input
+              class="button"
+              type="button"
+              value="RESTART"
+              onclick="restartGame()"
+            />
+            <h1>
+              Score:
+              <div id="score">0</div>
+            </h1>
+            <canvas id="nextFigure" height="170" width="230"></canvas>
+          </td>
+          <td>
+            <div>
+              <canvas id="tetris" height="800" width="560"> </canvas>
+            </div>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+    <script src="./tetris.js"></script>
+  </body>
+</html>
